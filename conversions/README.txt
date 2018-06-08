@@ -1,0 +1,1 @@
+When you use Yolov2 detection examples, you will need to modify the region.cpp file and run make agin. Will need to change bias and number of classes. Replace ObjectWrapper with the new one I wrote. It uses the new fifos and changes data type to 32 bit from 16.
