@@ -1,0 +1,8 @@
+Use run_docker_v2.sh
+
+Dont' forget on your host machine to: xhost +
+
+Inside docker container: 
+
+sudo apt-get install qtcreator pyqt5-dev-tools
+sudo apt-get install xorg openbox
