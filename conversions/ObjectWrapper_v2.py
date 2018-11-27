@@ -109,7 +109,7 @@ class ObjectWrapper():
         for i in range(ObjectWrapper.devNum):
             im, offx, offy, w, h = self.PrepareImage(img[i], self.dim)
             # Edit
-            ObjectWrapper.graphHandle[i].queue_inference_with_fifo_elem(ObjectWrapper.inputHandle[i], ObjectWrapper.outputHandle[0], im.astype(np.float32), 'user object')
+            ObjectWrapper.graphHandle[i].queue_inference_with_fifo_elem(ObjectWrapper.inputHandle[i], ObjectWrapper.outputHandle[i], im.astype(np.float32), 'user object')
             #ObjectWrapper.graphHandle[i].LoadTensor(im.astype(np.float16), 'user object')
 
         for i in range(ObjectWrapper.devNum):
